@@ -1,0 +1,68 @@
+.transportation-options {
+  margin: 24px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f1f8e9;
+  border: 1px solid #dcedc8;
+}
+
+.transportation-options h2 {
+  margin-top: 0;
+  color: #33691e;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.transportation-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transportation-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.transportation-type h3 {
+  margin: 0;
+  color: #558b2f;
+  font-size: 1.2rem;
+}
+
+.recommended-badge {
+  background-color: #8bc34a;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.transportation-details {
+  color: #33691e;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.transportation-details p {
+  margin: 8px 0;
+}
+
+.transportation-notes {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #dcedc8;
+  font-style: italic;
+  color: #689f38;
+  font-size: 0.85rem;
+}
