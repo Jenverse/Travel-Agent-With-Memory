@@ -1,6 +1,6 @@
-# Travel Agent LLM Application
+# Travel Agent LLM Application with Memory
 
-A conversational AI travel assistant that helps users plan their trips by recommending destinations, generating itineraries, and suggesting transportation options.
+An enhanced conversational AI travel assistant that helps users plan their trips by recommending destinations, generating itineraries, and suggesting transportation options. This version includes a memory system that remembers user preferences and past interactions for a more personalized experience.
 
 ## Features
 
@@ -8,6 +8,7 @@ A conversational AI travel assistant that helps users plan their trips by recomm
 - **Customized Itineraries**: Receive detailed day-by-day itineraries for your selected destinations
 - **Transportation Options**: Get suggestions for the best ways to travel to and around your destination
 - **Conversational Interface**: Interact with the travel agent through a natural chat interface
+- **Memory System**: Remembers your past interactions, preferences, and travel history to provide more personalized recommendations
 
 ## Getting Started
 
@@ -20,8 +21,8 @@ A conversational AI travel assistant that helps users plan their trips by recomm
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd travel-agent-app
+   git clone https://github.com/Jenverse/Travel-Agent-With-Memory.git
+   cd Travel-Agent-With-Memory
    ```
 
 2. Install dependencies:
@@ -49,6 +50,7 @@ The application will be available at `http://localhost:5173`
 3. The agent will provide recommendations, which will appear in the destination section
 4. Ask for an itinerary for a specific destination
 5. Inquire about transportation options to and around your chosen destination
+6. The agent will remember your preferences and past interactions for future conversations
 
 ## Example Prompts
 
@@ -57,6 +59,8 @@ The application will be available at `http://localhost:5173`
 - "I want to visit Japan for 7 days. What should my itinerary look like?"
 - "What's the best way to get around in Bali?"
 - "I'm traveling with kids and want a family-friendly destination"
+- "Remember that I prefer luxury accommodations"
+- "What was that beach destination you recommended to me earlier?"
 
 ## Development
 
@@ -66,22 +70,7 @@ The application will be available at `http://localhost:5173`
 - `src/services/`: Services for API communication
 - `src/styles/`: CSS files for styling
 - `src/utils/`: Utility functions and mock data
-
-### Using Mock Data
-
-For development without API calls, you can use the mock data provided in `src/utils/mockData.js`. To use mock data:
-
-1. Import the mock data in your component:
-   ```jsx
-   import { mockDestinations, mockItinerary, mockTransportationOptions } from '../utils/mockData';
-   ```
-
-2. Use the mock data instead of API calls:
-   ```jsx
-   const [destinations, setDestinations] = useState(mockDestinations);
-   const [itinerary, setItinerary] = useState(mockItinerary);
-   const [transportationOptions, setTransportationOptions] = useState(mockTransportationOptions);
-   ```
+- `src/memory/`: Memory system implementation
 
 ## License
 
